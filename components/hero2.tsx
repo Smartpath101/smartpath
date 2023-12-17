@@ -52,7 +52,17 @@ export function Hero2() {
     });
 
     function onSubmit(data: z.infer<typeof FormSchema>) {
-        toast.success('Form submmited sccessfully')
+        const whatsappNumber = '+919876543210';
+        
+        const message = `Name: ${data.name}%0A` +
+                        `Mobile Number: ${data.mobileNumber}%0A` +
+                        `Class: ${data.studentClass}%0A` +
+                        `Subject: ${data.subject}%0A` +
+                        `Address: ${data.address}`;
+
+        window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+
+        toast.success('Form submitted successfully!');
     }
 
     return (
@@ -106,9 +116,9 @@ export function Hero2() {
                                                 </SelectTrigger>
                                             </FormControl>
                                             <SelectContent>
-                                                <SelectItem value="m@example.com">m@example.com</SelectItem>
-                                                <SelectItem value="m@google.com">m@google.com</SelectItem>
-                                                <SelectItem value="m@support.com">m@support.com</SelectItem>
+                                                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(t =>
+                                                    <SelectItem value={`Class${t}`}>Class {t}</SelectItem>
+                                                )}
                                             </SelectContent>
                                         </Select>
                                     </FormItem>
@@ -128,9 +138,15 @@ export function Hero2() {
                                                 </SelectTrigger>
                                             </FormControl>
                                             <SelectContent>
-                                                <SelectItem value="m@example.com">m@example.com</SelectItem>
-                                                <SelectItem value="m@google.com">m@google.com</SelectItem>
-                                                <SelectItem value="m@support.com">m@support.com</SelectItem>
+                                                <SelectItem value="Maths"> Maths</SelectItem>
+                                                <SelectItem value='Physics' > Physics</SelectItem >
+                                                <SelectItem value='Physics' > Physics</SelectItem >
+                                                <SelectItem value='Chemistry' > Chemistry</SelectItem >
+                                                <SelectItem value='Biology' > Biology</SelectItem >
+                                                <SelectItem value='Computer' > Computer</SelectItem >
+                                                <SelectItem value='English' > English</SelectItem >
+                                                <SelectItem value='Accounting' > Accounting</SelectItem >
+                                                <SelectItem value='Economics' > Economics</SelectItem >
                                             </SelectContent>
                                         </Select>
                                     </FormItem>
