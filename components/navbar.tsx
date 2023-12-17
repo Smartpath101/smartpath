@@ -10,14 +10,14 @@ const Navbar = () => {
     };
 
     return (
-        <nav className=' z-50 fixed w-full top-0 bg-white flex flex-col md:flex-row items-center justify-between px-5 py-3'>
-            <div className='flex md:w-auto w-full justify-between items-center'>
+        <nav className=' z-50 fixed w-full top-0 bg-white flex flex-col md:flex-row items-center justify-between py-3'>
+            <div className='flex md:w-auto pl-5 w-full justify-between items-center'>
                 <Link href='/' >
                     <img className='h-10 md:h-max' src="/assets/logo.svg" alt="logo" />
                 </Link>
                 <button
                     onClick={toggleDrawer}
-                    className='text-black focus:outline-none md:hidden ml-auto'
+                    className='text-black pr-5 focus:outline-none md:hidden ml-auto'
                 >
                     <svg
                         className={`w-6 h-6 ${isDrawerOpen ? 'hidden' : ''}`}
@@ -49,18 +49,21 @@ const Navbar = () => {
                     </svg>
                 </button>
             </div>
-            <ul className={`md:flex text-custom-blue ${isDrawerOpen ? 'flex flex-col text-end' : 'hidden md:flex items-center gap-5 '} `}>
-            <li className='md:ml-4'>
-                    <Link href='#work'>Products</Link>
+            <ul className={`md:flex md:pr-5 text-custom-blue ${isDrawerOpen ? 'flex w-full flex-col bg-[#FFDC5B] text-center' : 'hidden md:flex items-center gap-5 '} `}>
+                <li className='md:ml-4 my-3 md:my-0 '>
+                    <Link href='#home'>Home</Link>
                 </li>
-                <li className='md:ml-4'>
-                    <Link href='#work'>How it works</Link>
+                <hr className=' md:hidden w-1/2 m-auto bg-[#0000001F]' />
+                <li className='md:ml-4 my-3 md:my-0'>
+                    <Link href='#educators'>Our Educators</Link>
                 </li>
-                <li className='md:ml-4 my-1 md:my-0'>
-                    <Link href='#pricing'>Pricing</Link>
+                <hr className=' md:hidden w-1/2 m-auto bg-[#0000001F]' />
+                <li className='md:ml-4 my-3 md:my-0 '>
+                    <Link href='#curriculum'>Curriculum</Link>
                 </li>
-                <li className='md:ml-4'>
-                    <Link href='/contact'>Contact us</Link>
+                <hr className=' md:hidden w-1/2 m-auto bg-[#0000001F]' />
+                <li className='md:ml-4 my-3 md:my-0'>
+                    <Link href='#aboutus'>About US</Link>
                 </li>
             </ul>
         </nav>

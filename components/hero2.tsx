@@ -37,7 +37,7 @@ const FormSchema = z.object({
     address: z.string(),
 });
 
-export function Hero() {
+export function Hero2() {
 
 
     const form = useForm<z.infer<typeof FormSchema>>({
@@ -56,9 +56,11 @@ export function Hero() {
     }
 
     return (
-        <main id="home" className=" w-full md:px-16 mt-16 px-5 flex justify-between items-center flex-col-reverse md:flex-row " >
+        <main style={{
+            background:'linear-gradient(180deg, #FFE789 0%, rgba(255, 242, 189, 0.00) 37.08%)'
+        }} className=" w-full py-8 md:px-16 mt-16 px-5 flex justify-between items-center flex-col md:flex-row " >
             <div className="w-full " >
-                <h1 className="md:text-[40px] text-center md:text-left md:leading-[60px] text-3xl leading-10 " >#1 Platform for experienced Home Tutors in Lucknow & Prayagraj.</h1>
+                <h1 className="md:text-[32px] text-center md:text-left text-[28px] " >Contact us now and secure your spot</h1>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="w-3/4 space-y-4">
 
@@ -155,11 +157,11 @@ export function Hero() {
                 </Form>
 
                 <div className="flex flex-row gap-2 items-center my-4 mt-8 text-xl md:text-2xl" ><FaPhoneAlt /> +919098798769</div>
-                <div className="flex flex-row gap-2 items-center my-4 mb-6 text-xl md:text-2xl" ><FaLocationDot /> Available in Lucknow & Prayagraj</div>
+                <div className="flex flex-row gap-2 items-center my-4 mb-3 text-xl md:text-2xl" ><FaLocationDot /> Available in Lucknow & Prayagraj</div>
 
             </div>
 
-            <img className="w-max" src="/assets/hero1.svg" alt="hero" />
+            <img className="w-max" src="/assets/contact.svg" alt="hero" />
         </main>
     );
 }
