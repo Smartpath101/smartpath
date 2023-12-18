@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className=' z-50 fixed w-full top-0 bg-white flex flex-col md:flex-row items-center justify-between py-3'>
             <div className='flex md:w-auto pl-5 w-full justify-between items-center'>
                 <Link href='/' >
-                    <img className='h-10 md:h-max' src="/assets/logo.svg" alt="logo" />
+                    <img className='h-16 md:h-max' src="/assets/logo.svg" alt="logo" />
                 </Link>
                 <button
                     onClick={toggleDrawer}

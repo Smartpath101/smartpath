@@ -52,7 +52,7 @@ export function Hero2() {
     });
 
     function onSubmit(data: z.infer<typeof FormSchema>) {
-        const whatsappNumber = '+919876543210';
+        const whatsappNumber = '+919219904024';
         
         const message = `Name: ${data.name}%0A` +
                         `Mobile Number: ${data.mobileNumber}%0A` +
@@ -172,7 +172,7 @@ export function Hero2() {
                     </form>
                 </Form>
 
-                <div className="flex flex-row gap-2 items-center my-4 mt-8 text-xl md:text-2xl" ><FaPhoneAlt /> +919098798769</div>
+                <div className="flex flex-row gap-2 items-center my-4 mt-8 text-xl md:text-2xl" ><FaPhoneAlt /> +91 9219904024</div>
                 <div className="flex flex-row gap-2 items-center my-4 mb-3 text-xl md:text-2xl" ><FaLocationDot /> Available in Lucknow & Prayagraj</div>
 
             </div>
