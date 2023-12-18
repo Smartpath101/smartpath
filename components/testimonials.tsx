@@ -26,8 +26,8 @@ const Testimonials = () => {
             Really appreciate SmartPath Learning”
           </div>
           <div className='flex items-center justify-center gap-2 flex-col mt-5 ' >
-          <img src="/assets/tm1.svg" alt="test" />
-          <p className='text-sm' >Rajesh Sharma(Parent)</p>
+            <img src="/assets/tm1.svg" alt="test" />
+            <p className='text-sm' >Rajesh Sharma(Parent)</p>
           </div>
         </div>
 
@@ -44,14 +44,13 @@ const Testimonials = () => {
             <GoStarFill />
           </div>
           <div className='bg-[#FFF4BC] px-5 py-14 leading-[28px] text-sm md:text-base mx-10' >
-            “SmartPath Learning has been the life changer for our child.
-            The educators are experienced and well trained. Their contribution
-            is paying well, as we have seen the change in our child’s grades.
-            Really appreciate SmartPath Learning”
+            “Exceptional experience at Smartpath Tutor Center! The personalized attention and
+            innovative teaching methods exceeded my expectations. The tutors are not only
+            knowledgeable but also incredibly supportive”
           </div>
           <div className='flex items-center justify-center gap-2 flex-col mt-5 ' >
-          <img src="/assets/tm1.svg" alt="test" />
-          <p className='text-sm' >Rajesh Sharma(Parent)</p>
+            <img src="/assets/tm1.svg" alt="test" />
+            <p className='text-sm' >Rajesh Sharma(Parent)</p>
           </div>
         </div>
       </div>

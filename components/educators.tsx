@@ -11,7 +11,7 @@ const Educators = () => {
             lan:'English'
         },
         {
-            name:'Pankaj',
+            name:'Pankaj Kumar',
             exp:'3',
             classes:'1to 8th',
             subject:'All-subjects',
@@ -27,7 +27,7 @@ const Educators = () => {
             lan:'English'
         },
         {
-            name:'Aditya Kumar',
+            name:'Aditya',
             exp:'6',
             classes:'9th to 12th & all competitive exams like jee, ssc , nda , cds and upsi etc.',
             subject:'Specially PCM English and other subjects',

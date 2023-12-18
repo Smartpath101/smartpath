@@ -107,18 +107,9 @@ export function Hero() {
                                 render={({ field }) => (
                                     <FormItem className="flex-1" >
                                         <FormLabel>Class</FormLabel>
-                                        <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                            <FormControl>
-                                                <SelectTrigger>
-                                                    <SelectValue placeholder="Select class" />
-                                                </SelectTrigger>
-                                            </FormControl>
-                                            <SelectContent>
-                                                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(t =>
-                                                    <SelectItem value={`Class${t}`}>Class {t}</SelectItem>
-                                                )}
-                                            </SelectContent>
-                                        </Select>
+                                        <FormControl>
+                                        <Input placeholder="Class 1" {...field} />
+                                    </FormControl>
                                     </FormItem>
                                 )}
                             />
@@ -129,24 +120,9 @@ export function Hero() {
                                 render={({ field }) => (
                                     <FormItem className="flex-1" >
                                         <FormLabel>Subject</FormLabel>
-                                        <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                            <FormControl>
-                                                <SelectTrigger>
-                                                    <SelectValue placeholder="Select a subject" />
-                                                </SelectTrigger>
-                                            </FormControl>
-                                            <SelectContent>
-                                                <SelectItem value="Maths"> Maths</SelectItem>
-                                                <SelectItem value='Physics' > Physics</SelectItem >
-                                                <SelectItem value='Physics' > Physics</SelectItem >
-                                                <SelectItem value='Chemistry' > Chemistry</SelectItem >
-                                                <SelectItem value='Biology' > Biology</SelectItem >
-                                                <SelectItem value='Computer' > Computer</SelectItem >
-                                                <SelectItem value='English' > English</SelectItem >
-                                                <SelectItem value='Accounting' > Accounting</SelectItem >
-                                                <SelectItem value='Economics' > Economics</SelectItem >
-                                            </SelectContent>
-                                        </Select>
+                                        <FormControl>
+                                        <Input placeholder="English" {...field} />
+                                    </FormControl>
                                     </FormItem>
                                 )}
                             />

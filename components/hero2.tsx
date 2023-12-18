@@ -53,12 +53,12 @@ export function Hero2() {
 
     function onSubmit(data: z.infer<typeof FormSchema>) {
         const whatsappNumber = '+919219904024';
-        
+
         const message = `Name: ${data.name}%0A` +
-                        `Mobile Number: ${data.mobileNumber}%0A` +
-                        `Class: ${data.studentClass}%0A` +
-                        `Subject: ${data.subject}%0A` +
-                        `Address: ${data.address}`;
+            `Mobile Number: ${data.mobileNumber}%0A` +
+            `Class: ${data.studentClass}%0A` +
+            `Subject: ${data.subject}%0A` +
+            `Address: ${data.address}`;
 
         window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
 
@@ -67,7 +67,7 @@ export function Hero2() {
 
     return (
         <main style={{
-            background:'linear-gradient(180deg, #FFE789 0%, rgba(255, 242, 189, 0.00) 37.08%)'
+            background: 'linear-gradient(180deg, #FFE789 0%, rgba(255, 242, 189, 0.00) 37.08%)'
         }} className=" w-full py-8 md:px-16 mt-16 px-5 flex justify-between items-center flex-col md:flex-row " >
             <div className="w-full " >
                 <h1 className="md:text-[32px] text-center md:text-left text-[28px] " >Contact us now and secure your spot</h1>
@@ -109,18 +109,9 @@ export function Hero2() {
                                 render={({ field }) => (
                                     <FormItem className="flex-1" >
                                         <FormLabel>Class</FormLabel>
-                                        <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                            <FormControl>
-                                                <SelectTrigger>
-                                                    <SelectValue placeholder="Select class" />
-                                                </SelectTrigger>
-                                            </FormControl>
-                                            <SelectContent>
-                                                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(t =>
-                                                    <SelectItem value={`Class${t}`}>Class {t}</SelectItem>
-                                                )}
-                                            </SelectContent>
-                                        </Select>
+                                        <FormControl>
+                                            <Input placeholder="Class 1" {...field} />
+                                        </FormControl>
                                     </FormItem>
                                 )}
                             />
@@ -131,24 +122,9 @@ export function Hero2() {
                                 render={({ field }) => (
                                     <FormItem className="flex-1" >
                                         <FormLabel>Subject</FormLabel>
-                                        <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                            <FormControl>
-                                                <SelectTrigger>
-                                                    <SelectValue placeholder="Select a subject" />
-                                                </SelectTrigger>
-                                            </FormControl>
-                                            <SelectContent>
-                                                <SelectItem value="Maths"> Maths</SelectItem>
-                                                <SelectItem value='Physics' > Physics</SelectItem >
-                                                <SelectItem value='Physics' > Physics</SelectItem >
-                                                <SelectItem value='Chemistry' > Chemistry</SelectItem >
-                                                <SelectItem value='Biology' > Biology</SelectItem >
-                                                <SelectItem value='Computer' > Computer</SelectItem >
-                                                <SelectItem value='English' > English</SelectItem >
-                                                <SelectItem value='Accounting' > Accounting</SelectItem >
-                                                <SelectItem value='Economics' > Economics</SelectItem >
-                                            </SelectContent>
-                                        </Select>
+                                        <FormControl>
+                                            <Input placeholder="English" {...field} />
+                                        </FormControl>
                                     </FormItem>
                                 )}
                             />

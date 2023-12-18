@@ -8,20 +8,20 @@ const Demo = () => {
     }} 
     className='h-screen w-full flex items-center justify-around flex-col'
     >
-        <div className='flex items-center px-2 md:px-0 justify-evenly gap-1 md:gap-0 flex-row w-full' >
+        <div className='flex items-center px-2 md:px-0 mt-5 md:mt-20 justify-evenly gap-1 md:gap-0 flex-row w-full' >
             <span className='bg-customYellow text-center p-1 md:p-4 rounded-md md:rounded-xl ' >
                 <h2 className='text-[28px] md:text-[60px]' >1</h2>
                 <p className='text-sm md:text-[28px] ' >Tell us your needs</p>
             </span>
             <FaGreaterThan className='text-[#00000033] text-xl md:text-[80px]' />
             <span className='bg-customYellow text-center p-1 md:p-4 rounded-md md:rounded-xl ' >
-                <h2 className='text-[28px] md:text-[60px]' >1</h2>
-                <p className='text-sm md:text-[28px] ' >Tell us your needs</p>
+                <h2 className='text-[28px] md:text-[60px]' >2</h2>
+                <p className='text-sm md:text-[28px] ' >Get a free demo</p>
             </span>
             <FaGreaterThan className='text-[#00000033] text-xl md:text-[80px]' />
             <span className='bg-customYellow text-center p-1 md:p-4 rounded-md md:rounded-xl ' >
                 <h2 className='text-[28px] md:text-[60px]' >1</h2>
-                <p className='text-sm md:text-[28px] ' >Tell us your needs</p>
+                <p className='text-sm md:text-[28px] ' >Confirm if you like</p>
             </span>
         </div>
         <img className='w-max' src="/assets/hero2.svg" alt="hero" />
