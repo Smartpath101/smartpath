@@ -49,8 +49,8 @@ const Testimonials = () => {
             knowledgeable but also incredibly supportive”
           </div>
           <div className='flex items-center justify-center gap-2 flex-col mt-5 ' >
-            <img src="/assets/tm1.svg" alt="test" />
-            <p className='text-sm' >Rajesh Sharma(Parent)</p>
+            <img src="/assets/tm2.svg" alt="test" />
+            <p className='text-sm' >Anshul Kumar</p>
           </div>
         </div>
       </div>
